@@ -1,100 +1,127 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الشركة العامة - الصفحة الرئيسية</title>
+    <title>الشركة العامة</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            background-color: #f5f5f5;
-            color: #333;
+            font-family: 'Cairo', sans-serif;
+            background-color: #f9f9f9;
+            color: #222;
         }
         header {
-            background-color: #004080;
+            background: linear-gradient(to left, #004080, #0059b3);
             color: white;
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
+        }
+        header h1 {
+            margin: 0 0 10px;
+            font-size: 36px;
+        }
+        header p {
+            margin: 0;
+            font-size: 18px;
         }
         nav {
             background-color: #003060;
             display: flex;
             justify-content: center;
-            gap: 30px;
-            padding: 10px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 15px 10px;
         }
         nav a {
             color: white;
             text-decoration: none;
-            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: #004080;
+            transition: 0.3s;
         }
-        section {
-            padding: 40px;
-            max-width: 1000px;
+        nav a:hover {
+            background-color: #0059b3;
+        }
+        .container {
+            max-width: 1200px;
             margin: auto;
+            padding: 40px 20px;
         }
-        .box {
-            background-color: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #004080;
         }
         footer {
             background-color: #004080;
             color: white;
             text-align: center;
-            padding: 15px;
-            margin-top: 30px;
+            padding: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>الشركة العامة</h1>
-        <p>نبذة عن الشركة ورسالتها وأهدافها</p>
+        <p>نحو مستقبل رقمي شامل ومستدام</p>
     </header>
 
     <nav>
         <a href="#about">عن الشركة</a>
-        <a href="#subsidiaries">الشركات الفرعية</a>
-        <a href="#partners">الشركات المتعاقد معها</a>
-        <a href="#news">الأخبار والإعلانات</a>
-        <a href="#contact">اتصل بنا</a>
+        <a href="#subsidiaries">شركاتنا</a>
+        <a href="#partners">شركاؤنا</a>
+        <a href="#news">الأخبار</a>
+        <a href="#contact">تواصل معنا</a>
     </nav>
 
-    <section id="about" class="box">
-        <h2>عن الشركة</h2>
-        <p>تأسست الشركة العامة لتقديم خدمات متعددة تشمل القطاعات الحيوية والتنموية. تلتزم الشركة بتقديم أفضل الحلول والتقنيات الحديثة.</p>
-    </section>
+    <div class="container">
+        <section id="about" class="card">
+            <h2>عن الشركة</h2>
+            <p>الشركة العامة هي شركة رائدة تضم مجموعة من الشركات الخدمية التي تقدم خدمات متنوعة في مجالات الطاقة، المياه، الاتصالات، التقنية وغيرها. رؤيتنا تتمثل في دعم التحول الرقمي وتقديم حلول متقدمة تدعم التنمية الوطنية المستدامة.</p>
+        </section>
 
-    <section id="subsidiaries" class="box">
-        <h2>الشركات الفرعية</h2>
-        <ul>
-            <li>شركة الكهرباء - العنوان: طرابلس، النشاط: خدمات الطاقة</li>
-            <li>شركة المياه - العنوان: بنغازي، النشاط: خدمات المياه والصرف</li>
-            <li>شركة الاتصالات - العنوان: مصراتة، النشاط: الاتصالات والبنية التحتية</li>
-        </ul>
-    </section>
+        <section id="subsidiaries" class="card">
+            <h2>الشركات الفرعية</h2>
+            <ul>
+                <li><strong>شركة الكهرباء:</strong> طرابلس - خدمات الطاقة</li>
+                <li><strong>شركة المياه:</strong> بنغازي - خدمات المياه والصرف الصحي</li>
+                <li><strong>شركة الاتصالات:</strong> مصراتة - الاتصالات والبنية التحتية</li>
+            </ul>
+        </section>
 
-    <section id="partners" class="box">
-        <h2>الشركات المتعاقد معها</h2>
-        <p>تشمل قائمة الشركاء شركات التوريد، التعاون، والاستشارات التقنية.</p>
-    </section>
+        <section id="partners" class="card">
+            <h2>الشركات المتعاقد معها</h2>
+            <p>نحن نعمل مع نخبة من الشركاء في مجالات التوريد، الاستشارات، والخدمات الفنية من أجل ضمان الجودة والاستدامة في المشاريع والخدمات المقدمة.</p>
+        </section>
 
-    <section id="news" class="box">
-        <h2>الأخبار والإعلانات</h2>
-        <p>الإعلان الأخير: افتتاح مقر جديد في سبها بتاريخ 1 يوليو 2025.</p>
-    </section>
+        <section id="news" class="card">
+            <h2>الأخبار والإعلانات</h2>
+            <ul>
+                <li>📅 <strong>1 يوليو 2025:</strong> افتتاح مقرنا الجديد في سبها.</li>
+                <li>📢 بدء التعاقد مع شركة دولية لتحسين البنية التحتية الرقمية.</li>
+            </ul>
+        </section>
 
-    <section id="contact" class="box">
-        <h2>اتصل بنا</h2>
-        <p>البريد الإلكتروني: info@company.ly</p>
-        <p>الهاتف: 021-0000000</p>
-        <p>العنوان: طرابلس، شارع الشركة العامة</p>
-    </section>
+        <section id="contact" class="card">
+            <h2>تواصل معنا</h2>
+            <p>📧 البريد الإلكتروني: info@company.ly</p>
+            <p>📞 الهاتف: 021-0000000</p>
+            <p>📍 العنوان: طرابلس، شارع الشركة العامة</p>
+        </section>
+    </div>
 
     <footer>
         &copy; 2025 الشركة العامة. جميع الحقوق محفوظة.

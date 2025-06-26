@@ -1,1 +1,103 @@
-<html><body><p>الأخبار - placeholder</p></body></html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الأخبار - الشركة العامة القابضة</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f4f4f4;
+      color: #222;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #0059b3;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 15px;
+      display: block;
+    }
+    nav a:hover {
+      background-color: #003f80;
+    }
+    main {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+    .news-item {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .news-item h3 {
+      margin-top: 0;
+      color: #004080;
+    }
+    .news-item img {
+      max-width: 100%;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>الأخبار</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">الرئيسية</a>
+    <a href="news.html">الأخبار</a>
+    <a href="companies.html">الشركات</a>
+    <a href="partners.html">الشركاء</a>
+    <a href="activities.html">الفعاليات</a>
+    <a href="contact.html">اتصل بنا</a>
+  </nav>
+
+  <main>
+    <div class="news-item">
+      <h3>📅 1 يونيو 2025 - توقيع شراكة استراتيجية</h3>
+      <p>أعلنت الشركة العامة القابضة عن توقيع اتفاقية شراكة مع شركة دولية متخصصة في تطوير البنية الرقمية.</p>
+      <img src="assets/images/news1.jpg" alt="صورة خبر 1">
+    </div>
+
+    <div class="news-item">
+      <h3>📅 15 مايو 2025 - مؤتمر الاقتصاد الرقمي</h3>
+      <p>شاركت الشركة في مؤتمر الاقتصاد الرقمي العربي، وتم استعراض أحدث مبادراتها التقنية.</p>
+      <img src="assets/images/news2.jpg" alt="صورة خبر 2">
+    </div>
+
+    <div class="news-item">
+      <h3>📅 28 أبريل 2025 - افتتاح فرع جديد</h3>
+      <p>تم افتتاح فرع جديد للشركة في المنطقة الجنوبية، بحضور مسؤولين محليين.</p>
+      <img src="assets/images/news3.jpg" alt="صورة خبر 3">
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 الشركة العامة القابضة. جميع الحقوق محفوظة.
+  </footer>
+</body>
+</html>

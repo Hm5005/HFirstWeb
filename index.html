@@ -1,177 +1,1 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>الشركة العامة</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: 'Cairo', sans-serif;
-      background-color: #fff;
-      color: #333;
-    }
-    .top-bar {
-      background-color: #222;
-      color: white;
-      padding: 10px 20px;
-      text-align: left;
-      font-size: 14px;
-    }
-    header {
-      background-image: url('https://via.placeholder.com/1400x500?text=بانر+رئيسي');
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 48px;
-    }
-    nav {
-      background-color: #004080;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-      padding: 15px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .section {
-      padding: 60px 20px;
-      max-width: 1200px;
-      margin: auto;
-    }
-    .section h2 {
-      text-align: center;
-      color: #004080;
-      margin-bottom: 40px;
-    }
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-    }
-    .card {
-      background: white;
-      border: 1px solid #ddd;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      width: 300px;
-      text-align: center;
-      padding: 20px;
-    }
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
-    .contact {
-      background-color: #f2f2f2;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    footer {
-      background-color: #222;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-      font-size: 14px;
-    }
-  </style>
-</head>
-<body>
-  <div class="top-bar">📞 021-0000000 | ✉ info@company.ly</div>
-
-  <header>
-    <h1>الشركة العامة</h1>
-    <p>الريادة في الخدمات والتقنية والاستثمار</p>
-  </header>
-
-  <nav>
-    <a href="#services">خدماتنا</a>
-    <a href="#projects">مشاريعنا</a>
-    <a href="#news">الأخبار</a>
-    <a href="#contact">تواصل معنا</a>
-  </nav>
-
-  <section id="services" class="section">
-    <h2>خدماتنا</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x180?text=طاقة">
-        <h3>الطاقة</h3>
-        <p>حلول الطاقة المتجددة والكهرباء والبنية التحتية.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x180?text=مياه">
-        <h3>خدمات المياه</h3>
-        <p>إدارة شبكات المياه والصرف الصحي باحتراف.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x180?text=تقنية">
-        <h3>تقنية المعلومات</h3>
-        <p>خدمات رقمية وأنظمة ذكية ومراكز بيانات متقدمة.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section">
-    <h2>مشاريعنا</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x180?text=مشروع+1">
-        <h3>محطة كهرباء سبها</h3>
-        <p>مشروع تطوير البنية الكهربائية في الجنوب.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x180?text=مشروع+2">
-        <h3>تحلية مياه بنغازي</h3>
-        <p>نظام متكامل لتحسين جودة المياه وتوزيعها.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x180?text=مشروع+3">
-        <h3>مركز بيانات طرابلس</h3>
-        <p>بنية تحتية ذكية تربط الإدارات والمنشآت.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="news" class="section">
-    <h2>آخر الأخبار</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://via.placeholder.com/300x180?text=خبر+1">
-        <h3>افتتاح فرع جديد</h3>
-        <p>تم افتتاح فرعنا في سبها بحضور عدد من الشخصيات.</p>
-      </div>
-      <div class="card">
-        <img src="https://via.placeholder.com/300x180?text=خبر+2">
-        <h3>توقيع اتفاقية دولية</h3>
-        <p>عقد شراكة مع شركة تقنية عالمية في أوروبا.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>تواصل معنا</h2>
-    <p>📧 info@company.ly | 📞 021-0000000</p>
-    <p>📍 طرابلس – ليبيا</p>
-  </section>
-
-  <footer>
-    &copy; 2025 الشركة العامة - جميع الحقوق محفوظة
-  </footer>
-</body>
-</html>
+<html><body><p>الرئيسية - placeholder</p></body></html>
